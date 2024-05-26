@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-2: 'Public Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ========== COMMON ========== */
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+/* ========== HEADER ========== */
+.header-top {
+    position: relative;
+    margin-top: 28px;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DDDCDC;
+}
+
+.header-top::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: #143C3C;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.logo__icon,
+.logo__brand {
+    display: inline-block;
+}
+
+.logo__cta {
+    display: flex;
+    align-items: center;
+    column-gap: 88px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 38px;
+}
+
+.nav__item-link {
+    color: #575D5E;
+    font-family: var(--font-family-2);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.nav__item-link:hover {
+    font-weight: 600;
+}
+
+.logo__signup {
+    display: inline-block;
+    padding: 14px 53px;
+    border-radius: 40px;
+    border: 1.5px solid #143C3C;
+    background: #143C3C;
+    color: #FFF;
+    font-family: var(--font-family-2);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.logo__signup:hover {
+    opacity: 0.9;
+}
